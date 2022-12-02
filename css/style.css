@@ -42,7 +42,7 @@
 
 }
 
-.txt-box {
+.txtbox {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -53,15 +53,15 @@
     transition: 0.5s;
 }
 
-.txt-box span {
+.txtbox span {
     color: #fff;
     font-size: 40px;
 }
 
-.txt-box.blue { background: var(--blue);}
-.txt-box.yellow { background: var(--yellow);}
-.txt-box.green { background: var(--green);}
-.txt-box.red { background: var(--red);}
+.txtbox.blue { background: var(--blue);}
+.txtbox.yellow { background: var(--yellow);}
+.txtbox.green { background: var(--green);}
+.txtbox.red { background: var(--red);}
 
 .img-box{
     z-index: 1;
@@ -72,6 +72,13 @@
     width: 100%;
 }
 
-.txt-box:hover {
-    opacity: 0;
+
+
+.txtbox.active {
+    background: green;
+    transform: translateX(250px) rotate(180deg);
 }
+
+.txtbox:hover {
+    opacity: 0;
+}  
